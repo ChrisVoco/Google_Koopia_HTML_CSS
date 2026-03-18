@@ -1,14 +1,64 @@
-body { 
-    font-family: arial, sans-serif;
-    text-align: center;
-    margin-top: 150px;
-    padding: 100px;
+main {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  /* Asjad virna */
+  align-items: center;
+  /* Horisontaalselt keskele */
+  justify-content: center;
+  /* Vertikaalselt keskele */
+  height: 80vh;
+  /* Ekraani kõrgus */
 }
+
+.buttons {
+  display: flex;
+  gap: 2px 17px;
+}
+
+button {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 8px;
+  color: #3c4043;
+  font-size: 14px;
+  margin: 2px 1px;
+  padding: 2px 16px;
+  height: 36px;
+  min-width: 58px;
+  text-align: center;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: #d2d2d2;
+  box-shadow: 0 0.6px 0.6px rgba(0, 0, 0, 0.2);
+}
+
+.search-container {
+  display: flex;
+  padding: 11px;
+  /* Sisu ümber ruumi */
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  /* Ümarad nurgad */
+  width: 600px;
+  gap: 1px 2px;
+}
+
+.search-container:hover {
+  box-shadow: 2px 2px 5px #b8b9bd;
+  border: 1px solid#b8b9bd;
+}
+
 input {
-    display: block;
-    margin: auto;
-    padding: 12px 20px; /* Sisu ümber ruumi */
-    border: 1px solid #dfe1e5;
-    border-radius: 24px; /* Ümarad nurgad */
-    width: 400px;
+  flex: 1;
+  border: transparent;
+  outline: transparent;
+}
+
+.langue {
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  margin: 25px;
 }
