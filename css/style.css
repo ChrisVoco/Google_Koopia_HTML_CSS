@@ -1,3 +1,8 @@
+body {
+  margin: 0
+
+}
+
 main {
   display: flex;
   gap: 25px;
@@ -61,4 +66,39 @@ input {
   font-size: 12px;
   font-family: Arial, sans-serif;
   margin: 25px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #70757a;
+}
+
+.footer-top {
+  padding: 15px 30px;
+  border-bottom: 1px solid #000000;
+  color: #000000;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  margin-left: -9px;
+}
+.footer-left,
+.footer-right {
+  display: flex;
+  gap: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000000;
+  margin: 15px;
 }
