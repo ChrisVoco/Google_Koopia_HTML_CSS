@@ -1,6 +1,5 @@
 body {
-  margin: 0
-
+  margin: 0;
 }
 
 main {
@@ -80,7 +79,7 @@ footer {
 
 .footer-top {
   padding: 15px 30px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #d2d2d2;
   color: #000000;
 }
 
@@ -101,4 +100,90 @@ footer a {
   text-decoration: none;
   color: #000000;
   margin: 15px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.header-top > * {
+  margin-left: 15px;
+}
+
+.header a {
+  color: #000000;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.header:hover a {
+  color: #000000;
+  margin-right: 10px;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .search-container {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header-top {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 13px;
+    gap: 5px;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 0;
+    margin-left: 0;
+  }
+
+  .footer-left,
+  .footer-right {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  footer a {
+    margin: 5px 10px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
 }
